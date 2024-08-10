@@ -6,6 +6,7 @@ CLASSIFICATIONS = [
     "INSURANCE",
     "PAYMENT",
     "ORDER",
+    "OFFER",
     "BOOKING",
     "WARANTY",
     "BANK",
