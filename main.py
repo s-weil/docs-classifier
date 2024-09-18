@@ -18,7 +18,9 @@ def main(file_name: str):
 
 if __name__ == '__main__':
     # file_name = 'docs/swissblatt24.pdf'
-    file_name = 'docs/motel-one.pdf'
+    # file_name = 'docs/motel-one.pdf'
+    # file_name = 'docs/motel-one.pdf'
+    file_name = 'docs/angebot.pdf'
     main(file_name)
 
 
@@ -26,4 +28,4 @@ if __name__ == '__main__':
 # TODO: 
 # - save data to db, 
 # - archive docs to folders, index content, categorize
-# - run LLM in docker locally
+# - run LLM in docker locally: https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image
