@@ -1,0 +1,34 @@
+[package]
+name = "ocrs"
+version = "0.8.1"
+edition = "2021"
+authors = ["Robert Knight"]
+description = "OCR engine"
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/robertknight/ocrs"
+repository = "https://github.com/robertknight/ocrs"
+
+[dependencies]
+anyhow = "1.0.86"
+rayon = "1.10.0"
+rten = { workspace = true }
+rten-imageproc = { workspace = true }
+rten-tensor = { workspace = true }
+thiserror = "1.0.63"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+# nb. When changing this, make sure the version of wasm-bindgen-cli installed
+# in CI etc. is in sync.
+wasm-bindgen = "0.2.93"
+
+[dev-dependencies]
+fastrand = "2.1.0"
+image = { version = "0.25.1", default-features = false, features = ["png", "jpeg", "webp"] }
+lexopt = "0.3.0"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[features]
+# Use AVX-512 instructions if available. Requires nightly Rust.
+avx512 = ["rten/avx512"]

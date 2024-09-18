@@ -1,3 +1,9 @@
+*.rten
+dist/
+node_modules/
+target/
+rust/ocrs/examples
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

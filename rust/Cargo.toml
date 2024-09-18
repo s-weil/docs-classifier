@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+  "docs-classifier-cli",
+  "ocrs",
+]
+
+[workspace.dependencies]
+rten = { version = "0.13.1" }
+rten-imageproc = { version = "0.13.1" }
+rten-tensor = { version = "0.13.1" }
+
+# [profile.release]
+# stripe = true # strip symbols
+# opt-level = "s" # size
+# lto = true
+# codegen-units = 1
