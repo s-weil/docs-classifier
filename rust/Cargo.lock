@@ -99,6 +99,14 @@ dependencies = [
 [[package]]
 name = "docs-classifier-cli"
 version = "0.1.0"
+dependencies = [
+ "fastrand",
+ "image",
+ "lexopt",
+ "ocrs",
+ "rten",
+ "rten-tensor",
+]
 
 [[package]]
 name = "either"
@@ -230,9 +238,6 @@ name = "ocrs"
 version = "0.8.1"
 dependencies = [
  "anyhow",
- "fastrand",
- "image",
- "lexopt",
  "rayon",
  "rten",
  "rten-imageproc",

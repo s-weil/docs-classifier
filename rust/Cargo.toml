@@ -9,6 +9,7 @@ members = [
 rten = { version = "0.13.1" }
 rten-imageproc = { version = "0.13.1" }
 rten-tensor = { version = "0.13.1" }
+lexopt = "0.3.0"
 
 # [profile.release]
 # stripe = true # strip symbols

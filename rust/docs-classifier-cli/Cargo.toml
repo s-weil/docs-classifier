@@ -5,3 +5,11 @@ edition = "2021"
 
 
 [dependencies]
+ocrs = { path = "../ocrs"}
+rten = { workspace = true } 
+rten-tensor = { workspace = true }
+image = { version = "0.25.1", default-features = false, features = ["png", "jpeg", "webp"] }
+lexopt = { workspace = true } 
+
+[dev-dependencies]
+fastrand = "2.1.0"
